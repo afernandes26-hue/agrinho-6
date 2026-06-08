@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio inteligente entre a alta produtividade do campo e a preservação do meio ambiente.</p>
+    </header>
+
+    <main>
+        <section class="pillars-container">
+            <div class="card">
+                <h3>🌱 Produção Eficiente</h3>
+                <p>O uso de tecnologias de precisão, sementes melhoradas e rotação de culturas garante safras recordes sem a necessidade de expansão predatória de novas terras.</p>
+            </div>
+            <div class="card">
+                <h3>💧 Preservação Ativa</h3>
+                <p>Cuidado com os recursos hídricos através da irrigação gota a gota, proteção de nascentes e manutenção rigorosa das Áreas de Preservação Permanente (APPs).</p>
+            </div>
+            <div class="card">
+                <h3>🔄 Economia Circular</h3>
+                <p>Transformação de resíduos orgânicos em biofertilizantes e geração de energia limpa (biomassa e biogás), fechando o ciclo sustentável da fazenda.</p>
+            </div>
+        </section>
+
+        <section class="simulator-section">
+            <h2>Simulador de Impacto Sustentável</h2>
+            <p class="sim-description">Descubra a economia estimada ao aplicar práticas sustentáveis na sua propriedade rural.</p>
+            
+            <div class="sim-grid">
+                <div class="sim-form">
+                    <div class="form-group">
+                        <label for="tamanho">Tamanho da Propriedade (em Hectares):</label>
+                        <input type="number" id="tamanho" min="1" placeholder="Ex: 150" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tecnologia">Prática Sustentável Principal:</label>
+                        <select id="tecnologia">
+                            <option value="direto">Plantio Direto (Conservação do Solo)</option>
+                            <option value="precisao">Agricultura de Precisão (Redução de Insumos)</option>
+                            <option value="ilpf">Integração Lavoura-Pecuária-Floresta (ILPF)</option>
+                        </select>
+                    </div>
+                    <button class="btn-calc" onclick="calcularImpacto()">Simular Benefícios</button>
+                </div>
+
+                <div class="results-box" id="resultado">
+                    <h4>Resultados Estimados (Anual):</h4>
+                    <div class="result-item">📉 Redução na Emissão de CO₂: <span id="co2">-</span> toneladas</div>
+                    <div class="result-item">💧 Água Economizada: <span id="agua">-</span> milhões de litros</div>
+                    <div class="result-item">💰 Economia Financeira Estimada: <span id="dinheiro">-</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Conectando a força do campo com o respeito ao planeta.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
